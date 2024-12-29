@@ -7,17 +7,29 @@ pub fn NavBar() -> Html {
             <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
                 <p class="text-2xl font-bold text-gray-700 tracking-widest">{ "rcodr." }</p>
                 <div class="flex gap-6">
-                    <a href="#about" class="hover:text-emerald-400 transition-colors">
+                    <a
+                        href="https://github.com/Remmy-coder"
+                        class="hover:text-emerald-400 transition-colors"
+                    >
                         <i class="fa-brands fa-github" aria-hidden="true" />
                     </a>
-                    <a href="#projects" class="hover:text-emerald-400 transition-colors">
+                    <a
+                        href="mailto:remmy.ro@gmail.com"
+                        class="hover:text-emerald-400 transition-colors"
+                    >
                         <i class="fa-solid fa-envelope" aria-hidden="true" />
                     </a>
-                    <a href="#skills" class="hover:text-emerald-400 transition-colors">
+                    <a
+                        href="https://www.linkedin.com/in/remmy-omeje-5a519017a/"
+                        class="hover:text-emerald-400 transition-colors"
+                    >
                         <i class="fa-brands fa-linkedin" aria-hidden="true" />
                     </a>
-                    <a href="#contact" class="hover:text-emerald-400 transition-colors">
-                        <i class="fa-brands fa-x-twitter" aria-hidden="true"/>
+                    <a
+                        href="https://x.com/laurentthegoat"
+                        class="hover:text-emerald-400 transition-colors"
+                    >
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true" />
                     </a>
                 </div>
             </div>
