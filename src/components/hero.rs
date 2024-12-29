@@ -103,7 +103,7 @@ pub fn Hero() -> Html {
         <>
             <section
                 class="min-h-screen flex justify-center items-center bg-black text-green-400 bg-cover bg-center bg-fixed"
-                style="background-image: url('/static/herobg.png');"
+                style="background-image: url('static/herobg.png');"
             >
                 <div
                     class="min-h-screen rounded-lg p-8 sm:p-12 border border-green-400  mt-14 shadow-[0_0_15px_rgba(0,255,0,0.2)] bg-black/70 backdrop-blur-sm"
@@ -133,7 +133,7 @@ pub fn Hero() -> Html {
                         </p>
                         <div class="mt-10 mb-6">
                             <a
-                                href="/static/Omeje_CV.pdf"
+                                href="static/Omeje_CV.pdf"
                                 download="Omeje_Remmy_CV.pdf"
                                 class="inline-block px-6 py-3 bg-green-800 text-black font-bold text-sm uppercase rounded shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
                             >
