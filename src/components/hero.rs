@@ -126,7 +126,7 @@ pub fn Hero() -> Html {
 
                     <div class="mt-6">
                         <a
-                            href="static/omeje_cv.pdf"
+                            href="/porfolio-rs/static/omeje_cv.pdf"
                             download="omeje_remmy_cv.pdf"
                             class="inline-block px-6 py-3 border-2 border-red-700 font-bold uppercase tracking-widest rounded hover:bg-green-900 hover:text-green-100 transition"
                         >
