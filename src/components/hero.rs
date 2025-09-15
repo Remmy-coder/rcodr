@@ -17,7 +17,7 @@ pub fn ProjectCard(props: &ProjectCardProps) -> Html {
             rel="noopener noreferrer"
             class="flex flex-col justify-between bg-black rounded-lg p-6 border border-gray-700 hover:bg-transparent transition duration-300"
         >
-            <h3 class="text-xl font-bold mb-2">{ &props.name }</h3>
+            <h3 class="text-xl text-gray-400 font-bold mb-2">{ &props.name }</h3>
             <p class="text-gray-400 mb-4">{ &props.description }</p>
             <div class="flex flex-wrap gap-2 mb-4">
                 { for props.tags.iter().map(|tag| html! {
@@ -108,43 +108,36 @@ pub fn Hero() -> Html {
                 <div
                     class="min-h-screen rounded-lg p-8 sm:p-12 border border-green-400  mt-14 shadow-[0_0_15px_rgba(0,255,0,0.2)] bg-black/70 backdrop-blur-sm"
                 >
-                    <div class="h-2/4">
-                        <h1
-                            class="text-right text-2xl sm:text-3xl font-bold mb-10 sm:mb-12 text-white "
+                <div class="h-2/4 bg-black text-gray-400 font-mono p-6 border-2 border-gray-600 rounded-md shadow-md shadow-gray-900">
+                    <h1 class="text-left text-3xl sm:text-4xl font-bold mb-8 tracking-wider">
+                        { "Hi, I'm " }
+                        <span class="text-red-700">{ "[ Omeje Remmy ]" }</span>
+                        <span class="ml-1 animate-blink">{ "_" }</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl mb-4">{ "> Software engineer sometimes sword immortal" }</p>
+                    <p class="text-lg sm:text-xl mb-4">{ "> Innovative senior engineer with 5+ years of experience delivering scalable software solutions." }</p>
+                    <p class="text-lg sm:text-xl mb-4">{ "> Passionate about low-level and functional programming with professional experience in TypeScript, Rust, and Lua." }</p>
+                    <p class="text-lg sm:text-xl mb-4">{ "> Arch Linux evangelist and Neovim preacher." }</p>
+                    <p class="text-lg sm:text-xl mb-6">
+                        { "> This entire website is written in " }
+                        <span class="font-bold text-green-200">{ "Rust." }</span>
+                    </p>
+
+                    <div class="mt-6">
+                        <a
+                            href="static/omeje_cv.pdf"
+                            download="omeje_remmy_cv.pdf"
+                            class="inline-block px-6 py-3 border-2 border-red-700 font-bold uppercase tracking-widest rounded hover:bg-green-900 hover:text-green-100 transition"
                         >
-                            { "Hi, I'm " }
-                            <span class="text-red-700 tracking-wide">{ " [ Omeje Remmy ]" }</span>
-                        </h1>
-                        <p class="text-xl sm:text-2xl mb-3 sm:mb-4 font-mono">
-                            { "> Software engineer based in Lagos, Nigeria." }
-                        </p>
-                        <p class="text-xl sm:text-2xl mb-3 sm:mb-4 font-mono">
-                            { "> Innovative senior software engineer with 5+ years of experience delivering scalable software solutions." }
-                        </p>
-                        <p class="text-xl sm:text-2xl mb-3 sm:mb-4 font-mono">
-                            { "> Passionate about low-level and functional programming with professional experience in TypeScript, Rust, and Lua." }
-                        </p>
-                        <p class="text-xl sm:text-2xl mb-3 sm:mb-4 font-mono">
-                            { "> Arch Linux evangelist and Neovim preacher." }
-                        </p>
-                        <p class="text-xl sm:text-2xl mb-3 sm:mb-4 font-mono">
-                            { "> This entire website is written in" }
-                            <span class="font-bold">{ " Rust." }</span>
-                        </p>
-                        <div class="mt-10 mb-6">
-                            <a
-                                href="static/Omeje_CV.pdf"
-                                download="Omeje_Remmy_CV.pdf"
-                                class="inline-block px-6 py-3 bg-green-800 text-black font-bold text-sm uppercase rounded shadow hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75"
-                            >
-                                <i class="mr-2 fa-solid fa-download" />
-                                { "Download CV" }
-                                <i class="ml-2 fa-solid fa-file-pdf" />
-                            </a>
-                        </div>
+                            <i class="mr-2 fa-solid fa-download"></i>
+                            { "download cv" }
+                            <i class="ml-2 fa-solid fa-file-pdf"></i>
+                        </a>
                     </div>
+                </div>
                     <div class="mt-20">
-                        <h2 class="text-3xl font-bold mb-8 text-red-700">
+                        <h2 class="text-3xl font-bold mb-8 text-gray-400">
                             { "[ Projects & Editor Setup ]" }
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
