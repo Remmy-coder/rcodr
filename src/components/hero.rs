@@ -21,7 +21,7 @@ pub fn Hero() -> Html {
 
                 <div class="flex-shrink-0">
                     <img
-                        src="static/avatar.png"
+                        src="./static/avatar.png"
                         alt="Omeje Remmy"
                         class="w-48 h-38 sm:w-60 sm:h-40 rounded-full border-2 border-green-400 shadow-md"
                     />
@@ -30,4 +30,3 @@ pub fn Hero() -> Html {
         </section>
     }
 }
-
