@@ -558,6 +558,7 @@ name = "portfolio"
 version = "0.1.0"
 dependencies = [
  "gloo-timers 0.2.6",
+ "js-sys",
  "log",
  "wasm-logger",
  "yew",
