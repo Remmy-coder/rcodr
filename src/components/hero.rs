@@ -3,12 +3,12 @@ use yew::{function_component, html, use_effect_with, use_state, Html};
 
 #[function_component]
 pub fn Hero() -> Html {
-    let bg = use_state(|| "/rcodr/static/bg.gif".to_string());
+    let bg = use_state(|| "/static/bg.gif".to_string());
 
     {
         let bg = bg.clone();
         use_effect_with((), move |_| {
-            let choices = vec!["/rcodr/static/bg.gif", "/rcodr/static/gif.gif"];
+            let choices = vec!["/static/bg.gif", "/static/gif.gif"];
 
             Interval::new(5000, move || {
                 let idx =
@@ -41,7 +41,7 @@ pub fn Hero() -> Html {
 
                 <div class="flex-shrink-0">
                     <img
-                        src="/rcodr/static/avatar.png"
+                        src="/static/avatar.png"
                         alt="Omeje Remmy"
                         class="w-48 h-38 sm:w-60 sm:h-38 rounded-full border-2 border-[#737373] shadow-md"
                     />
