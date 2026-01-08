@@ -6,7 +6,7 @@ mod components;
 #[function_component]
 fn App() -> Html {
     html! {
-        <div class="min-h-screen bg-black text-gray-100">
+        <div class="min-h-screen bg-black text-gray-100 overflow-x-hidden">
             <Loader>
                 <NavBar />
                 <Hero />

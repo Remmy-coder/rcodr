@@ -20,22 +20,29 @@ pub fn AnimeFight() -> Html {
         });
     }
     html! {
-        <section class="min-h-screen bg-black text-gray-100 py-20 px-4">
+        <section class="min-h-screen bg-black text-gray-100 py-20 px-4 overflow-x-hidden">
             <div class="max-w-6xl mx-auto">
                 <div class="mb-12 text-center">
                     <div class="font-mono text-green-400 text-sm mb-4">
                         <p class="animate-pulse">{ "> neural_interface --playback --combat_data" }</p>
                         <p class="text-gray-600 mt-1">{ "[ ACCESSING PEAK ARCHIVE... ]" }</p>
                     </div>
-                    <h2 class="text-3xl font-mono font-bold text-red-700 mb-2 tracking-wider">
-                        { "╔═══════════════════════════════════════════╗" }
-                    </h2>
-                    <h2 class="text-3xl font-mono font-bold text-red-700 mb-2 tracking-wider">
-                        { "║  PEAK SIMULATION :: NEURAL PLAYBACK   ║" }
-                    </h2>
-                    <h2 class="text-3xl font-mono font-bold text-red-700 mb-4 tracking-wider">
-                        { "╚═══════════════════════════════════════════╝" }
-                    </h2>
+                    <div class="hidden sm:block">
+                        <h2 class="text-xl sm:text-3xl font-mono font-bold text-red-700 mb-2 tracking-wider overflow-x-auto">
+                            { "╔═══════════════════════════════════════════╗" }
+                        </h2>
+                        <h2 class="text-xl sm:text-3xl font-mono font-bold text-red-700 mb-2 tracking-wider overflow-x-auto">
+                            { "║  PEAK SIMULATION :: NEURAL PLAYBACK   ║" }
+                        </h2>
+                        <h2 class="text-xl sm:text-3xl font-mono font-bold text-red-700 mb-4 tracking-wider overflow-x-auto">
+                            { "╚═══════════════════════════════════════════╝" }
+                        </h2>
+                    </div>
+                    <div class="sm:hidden">
+                        <h2 class="text-2xl font-mono font-bold text-red-700 mb-4">
+                            { "PEAK SIMULATION" }
+                        </h2>
+                    </div>
                     <p class="text-gray-500 font-mono text-xs">
                         { "[ STATUS: LOADING ] [ SOURCE: CLASSIFIED ] [ QUALITY: HD ]" }
                     </p>
