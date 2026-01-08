@@ -1,4 +1,4 @@
-use components::{hero::Hero, loader::Loader, nav_bar::NavBar};
+use components::{anime_fight::AnimeFight, hero::Hero, loader::Loader, mission_archive::MissionArchive, nav_bar::NavBar};
 use yew::prelude::*;
 
 mod components;
@@ -10,6 +10,8 @@ fn App() -> Html {
             <Loader>
                 <NavBar />
                 <Hero />
+                <MissionArchive />
+                <AnimeFight />
             </Loader>
         </div>
     }

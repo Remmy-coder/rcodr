@@ -561,6 +561,7 @@ dependencies = [
  "js-sys",
  "log",
  "wasm-logger",
+ "web-sys",
  "yew",
 ]
 
